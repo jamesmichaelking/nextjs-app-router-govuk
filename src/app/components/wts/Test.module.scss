@@ -1,0 +1,15 @@
+@import "node_modules/govuk-frontend/dist/govuk/base";
+
+.test {
+  background: $govuk-focus-colour;
+  @include govuk-font($size: 24, $weight: bold);
+  @include govuk-text-colour;
+
+  @include govuk-media-query(tablet) {
+    background: $govuk-brand-colour;
+  }
+
+  @include govuk-media-query(desktop) {
+    background: $govuk-border-colour;
+  }
+}
